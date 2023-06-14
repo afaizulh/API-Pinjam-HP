@@ -19,7 +19,6 @@ class GetAllStatusResource extends JsonResource
             'phone_name' => $this->phone_name,
             'status' => $this->status,
             'pemilik' => $this->pemilik['name'],
-            'feedback' => FeedbackResource::collection($this->feedback)
         ];
     }
 }
